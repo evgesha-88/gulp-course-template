@@ -1,0 +1,20 @@
+.container{
+    background-color: red;
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    height: 200px;
+    width: 500px;
+    align-items: flex-end;
+}
+
+.item{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+#item1{
+    align-self: flex-start;
+}
