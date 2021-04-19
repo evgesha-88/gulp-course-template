@@ -1,0 +1,10 @@
+footer {
+    @include flex-row;
+    justify-content: space-between;
+    div {
+        font-size: 14px;
+        line-height: 22px;
+        color: $black;
+        margin: 30px 0 23px;
+    }
+}

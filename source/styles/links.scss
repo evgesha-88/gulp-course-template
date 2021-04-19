@@ -2,21 +2,22 @@
     background: $darkgray;
     color: $white;
     padding: 73px 0 78px;
-    font-family: $primaryfontmedium;
     .container {
         @include flex-row;
     }
     &__about{
-        flex:1;
         font-size: 14px;
         line-height: 22px;
         color: $white;
+        width: 20%;
         p {
             margin-top: 32px;
         }
     }
     &__lists {
-        flex:3;
+        @include flex-row;
+        width: 60%;
+        justify-content: space-between;
         &-item {
             &-title{
                 font-size: 10px;
@@ -32,6 +33,18 @@
                     line-height: 22px;
                     color: #CBCFD4;
                     margin: 5px 0;
+                    &.vk-link::before {
+                        content: url(../img/vk.png);
+                        padding-right: 5px;
+                    }
+                    &.fb-link::before {
+                        content: url(../img/fb.png);
+                        padding-right: 5px;
+                    }
+                    &.inst-link::before {
+                        content: url(../img/inst.png);
+                        padding-right: 5px;
+                    }
                 }
             }
         }
